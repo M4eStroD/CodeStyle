@@ -36,7 +36,7 @@ public class Places : MonoBehaviour
         if (_currentIndexPlace >= _places.Count)
             _currentIndexPlace = 0;
 
-        _targetPlace = (transform.position - _places[_currentIndexPlace].position).normalized;
+        _targetPlace = (_places[_currentIndexPlace].position - transform.position).normalized;
     }
 
     private void Fill()
